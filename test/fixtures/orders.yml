@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customer_name: MyString
+  customer_email: MyString
+  description: MyText
+  price: MyString
+  paid_on: 2013-09-27 20:38:03
+
+two:
+  customer_name: MyString
+  customer_email: MyString
+  description: MyText
+  price: MyString
+  paid_on: 2013-09-27 20:38:03

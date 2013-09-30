@@ -22,6 +22,3 @@ This web app allows a bicycle shop to track orders for assembling custom bicycle
   $ rails s
 
 ### Open localhost:3000/orders in your web browser
-  
-
-    

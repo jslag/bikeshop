@@ -1,0 +1,19 @@
+%h1 Listing frame colors
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @frame_colors.each do |frame_color|
+    %tr
+      %td= frame_color.name
+      %td= link_to 'Show', frame_color
+      %td= link_to 'Edit', edit_frame_color_path(frame_color)
+      %td= link_to 'Destroy', frame_color, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Frame color', new_frame_color_path

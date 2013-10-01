@@ -16,6 +16,9 @@
     = f.label :description
     = f.text_area :description
   .field
+    = f.label :frame_color
+    = f.collection_select :frame_color_id, FrameColor.all, :id, :name, prompt: true
+  .field
     = f.label :price
     = f.text_field :price
   .field

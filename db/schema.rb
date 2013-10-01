@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130930192631) do
+ActiveRecord::Schema.define(version: 20131001020316) do
+
+  create_table "frame_colors", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "orders", force: true do |t|
     t.string   "customer_name"
@@ -22,6 +28,7 @@ ActiveRecord::Schema.define(version: 20130930192631) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.date     "estimated_completion_date"
+    t.integer  "frame_color_id"
   end
 
 end

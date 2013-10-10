@@ -2,6 +2,13 @@
 
 This web app allows a bicycle shop to track orders for assembling custom bicycle orders. It's an internal app for store employees to use, not a customer-facing one.
 
+## Exercise Set #2
+
+1. If you try to load the root of the site, `http://localhost:3000/`, you just see a default Rails welcome screen. Replace that with a simple welcome screen, which we'll build upon later. Just have it say "Welcome to the Bike Shop Order Tracker" and link to the /orders page.
+1. As we add more sections to the site, we'll want site navigation to allow users to get around. Go ahead and change the site so that every page links to the new homepage, as well as to the /orders page.
+1. Time to make the homepage more useful. In addition to welcoming the user, alter the page so that it displays the number of orders that haven't been paid for yet. ( or have been paid for and not completed... what's the workflow? )
+1. some other task that has something to do with HTTP / routing / the stuff we said we'd do on day 1
+
 ## Development Setup
 
 ### Fork the project, and check out a local copy:
@@ -17,7 +24,9 @@ This web app allows a bicycle shop to track orders for assembling custom bicycle
 
     $ rails s
 
-## Exercise Set #1
+## Previous Exercises
+
+### Exercise Set #1
 
 1. Before writing any code, we would like to make a configuration change. Most projects we see use the [Haml](http://haml.info/) templating language, rather than Rails' default ERB. So, let's configure the app to use Haml.
 1. Our initial requirements are simply to allow creating and listing orders with a few fields for each order: customer name, customer email, description, price, and the date that the bike was paid for. Since this sounds like standard CRUD, use rails' scaffold generator to  get started.
